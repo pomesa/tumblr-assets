@@ -70,6 +70,14 @@ body {
   color: white;
 }
 
+li.relationships a {
+  background: transparent;
+}
+
+.splash .favorite li:nth-of-type(2n+1) a {
+  background: transparent;
+}
+
 .listbox,
 fieldset,
 fieldset dl dl,
@@ -266,10 +274,6 @@ a.tag:hover,
   background: linear-gradient(to bottom right, #05192D,#b967ff);
 }
 
-li.relationships a {
-  background: #b967ff;
-}
-
 .home .header h2,
 #header .menu li {
   border: none;
@@ -325,10 +329,6 @@ tfoot {
   border-bottom: 1px solid white;
 }
 
-.splash .favorite li:nth-of-type(odd) a {
-  background-color: #C774E8;
-}
-
 #dashboard.own {
   border-top: none;
   border-bottom: none;
@@ -364,4 +364,137 @@ p.kudos {
 
 .userstuff p {
   word-break: normal;
+}
+
+.work-1234,
+.work-12345,
+.work-2952378 {
+  display: none !important;
+}
+
+.user-123456,
+.blurb.user-987,
+.bookmarks .user-21bnhj,
+.comments.user-312345 {
+  display: none !important;
+}
+
+.series-000,
+.series-12346 {
+  display: none !important;
+}
+
+a[href*="users/author"i] {
+  color: #5998D6 !important;
+  background-color: black !important;
+}
+
+a[href*="users/user"] {
+  color: #5998D6 !important;
+  font-weight: bold !important;
+  text-decoration: line-through dotted !important;
+  background-color: #5998D6 !important;
+}
+
+a[href*="users/welp"i],
+[href*="users/mooooore"i] {
+  color: blue !important;
+  font-weight: bold !important;
+  text-decoration: line-through wavy !important;
+}
+
+a.tag[href*="Major%20Character%20Death"i] {
+  color: #9D0909 !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
+}
+
+a.tag[href*="Agender"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(76, 76, 76, 0.5), rgba(188, 196, 199, 0.5), rgba(246, 248, 251, 0.5), rgba(183, 246, 132, 0.5), rgba(246, 248, 251, 0.5), rgba(188, 196, 199, 0.5), rgba(76, 76, 76));
+}
+
+a.tag[href*="Aromantic"i]:not([href*="phobia"i]),
+a.tag[href*="Aro!"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(61, 165, 66, 0.5), rgba(167, 211, 121, 0.5), rgba(246, 248, 251, 0.5), rgba(169, 169, 169, 0.5), rgba(76, 76, 76));
+}
+
+a.tag[href*="Asexual"i]:not([href*="phobia"i]),
+a.tag[href*="Ace!"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(76, 76, 76, 0.5), rgba(114, 114, 114, 0.5), rgba(204, 204, 204, 0.5), rgba(192, 127, 192, 0.5), rgba(141, 25, 141, 0.5), rgba(141, 25, 141));
+}
+
+a.tag[href*="Bigender"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(237, 128, 170, 0.5), rgba(253, 244, 122, 0.5), rgba(250, 245, 251, 0.5), rgba(174, 117, 201, 0.5), rgba(123, 168, 224));
+}
+
+a.tag[href*="Bisexual"i]:not([href*="phobia"i]),
+a.tag[href*="Bi!"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(214, 2, 112, 0.5), rgba(155, 79, 150, 0.5), rgba(50, 95, 185));
+}
+
+a.tag[href*="Demisexual"i]:not([href*="phobia"i]),
+a.tag[href*="Demi!"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(76, 76, 76, 0.5), rgba(246, 248, 251, 0.5), rgba(141, 25, 141, 0.5), rgba(141, 25, 141, 0.5), rgba(210, 210, 210, 0.5), rgba(210, 210, 210, 0.5), rgba(210, 210, 210));
+}
+
+a.tag[href*="Gay"i]:not([href*="phobia"i]),
+a.tag[href*="lgbtq"i]:not([href*="phobia"i]),
+a.tag[href*="queer"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(209, 34, 41, 0.5), rgba(246, 138, 30, 0.5), rgba(253, 224, 26, 0.5), rgba(0, 121, 64, 0.5), rgba(36, 64, 142, 0.5), rgba(115, 41, 130));
+}
+
+li.relationships:has(a[href*="Steve%20Harrington*s*Eddie%20Munson"]) a.tag,
+li.relationships:has(a[href*="Keith*s*Shiro%20"]) a.tag,
+li.relationships:has(a[href*="Steve%20Rogers*s*Tony%20Stark"]) a.tag,
+li.relationships:has(a[href*="Hank%20Anderson*s*Connor"]) a.tag,
+li.relationships:has(a[href*="Kirk%20Hammett*s*James%20Hetfield"]) a.tag,
+li.relationships:has(a[href*="Papa%20Emeritus%20III*s*Omega"]) a.tag,
+li.relationships:has(a[href*="Chris%20Redfield*s*Albert%20Wesker"]) a.tag,
+li.relationships:has(a[href*="Frank%20Iero*s*Gerard%20Way"]) a.tag,
+li.relationships:has(a[href*="Gerard%20Way*s*Frank%20Iero"]) a.tag,
+li.relationships:has(a[href*="Sherlock%20Holmes*s*John%20Watson"]) a.tag,
+li.relationships:has(a[href*="Oh%20Sangwoo*s*Yoon%20Bum"]) a.tag,
+li.relationships:has(a[href*="Will%20Graham*s*Hannibal%20Lecter"]) a.tag,
+li.relationships:has(a[href*="Lestat%20de%20Lioncourt*s*Louis%20de%20Pointe%20du%20Lac"]) a.tag,
+li.relationships:has(a[href*="Damien%20LaVey*s*Yellow%20%7C%20Oz"]) a.tag,
+li.relationships:has(a[href*="James%20%22Bucky%22%20Barnes*s*Tony%20Stark"]) a.tag,
+li.relationships:has(a[href*="Danny%20%22Jed%20Olsen%22%20Johnson%20%7C%20The%20Ghost%20Face*s*Michael%20Myers"]) a.tag,
+a.tag[href*="Gay%20Man"i]:not([href*="phobia"i]),
+a.tag[href*="mlm"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(7, 141, 112, 0.5), rgba(38, 206, 170, 0.5), rgba(152, 232, 193, 0.5), rgba(246, 248, 251, 0.5), rgba(123, 173, 226, 0.5), rgba(80, 73, 204, 0.5), rgba(61, 26, 120));
+}
+
+a.tag[href*="Genderfluid"i]:not([href*="phobia"i]),
+a.tag[href*="Gender%20Fluid"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(255, 118, 164, 0.5), rgba(246, 248, 251, 0.5), rgba(192, 17, 215, 0.5), rgba(244, 235, 70, 0.5), rgba(47, 60, 190, 0.5), rgba(76, 76, 76));
+}
+
+a.tag[href*="Genderqueer"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(192, 136, 230, 0.5), rgba(192, 136, 230, 0.5), rgba(246, 248, 251, 0.5), rgba(74, 129, 35, 0.5), rgba(74, 129, 35));
+}
+
+a.tag[href*="Greygender"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(192, 190, 207, 0.5), rgba(249, 249, 255, 0.5), rgba(53, 70, 162, 0.5), rgba(249, 249, 255, 0.5), rgba(81, 81, 94));
+}
+
+li.relationships:has(a[href*="Robin%20Buckley*s*Nancy%20Wheeler"]) a.tag,
+a.tag[href*="Lesbian"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(213, 45, 0, 0.5), rgba(239, 118, 39, 0.5), rgba(255, 154, 86, 0.5), rgba(229, 229, 229, 0.5), rgba(209, 98, 164, 0.5), rgba(181, 86, 144, 0.5), rgba(163, 2, 98));
+}
+
+a.tag[href*="Nonbinary"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(244, 235, 70, 0.5), rgba(254, 255, 248, 0.5), rgba(165, 97, 200, 0.5), rgba(30, 20, 45));
+}
+
+a.tag[href*="Pansexual"i]:not([href*="phobia"i]),
+a.tag[href*="Pan!"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(255, 76, 153, 0.5), rgba(253, 230, 97, 0.5), rgba(69, 167, 248));
+}
+
+a.tag[href*="Polysexual"i]:not([href*="phobia"i]) {
+  background-image: linear-gradient(to right, rgba(246, 80, 208, 0.5), rgba(116, 228, 160, 0.5), rgba(28, 184, 246));
+}
+
+a.tag[href*="Trans"i]:not([href*="Transphobia"i]):not([href*="transport"i]):not([href*="translation"i]):not([href*="transformers"i]) {
+  background-image: linear-gradient(to right, rgba(37, 197, 251, 0.5), rgba(247, 170, 202, 0.5), rgba(246, 248, 251, 0.5), rgba(247, 170, 202, 0.5), rgba(37, 197, 251));
 }
