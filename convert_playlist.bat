@@ -1,6 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
-
+rem https://nimtools.com/youtube-playlist-generator
 set "input=%USERPROFILE%\Downloads\playlist.txt"
 set "output=%USERPROFILE%\Downloads\youtube_links.txt"
 
