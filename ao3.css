@@ -1,5 +1,5 @@
 .wrapper {
-  background: url(https://64.media.tumblr.com/0ba8a3e9373aeff66a347e04a8e61105/079b1d0ee278b7c5-24/s500x750/ed1f74da4ffd989d3bc99038ee5600a6727b0645.png), linear-gradient(#9740b9,#4f23bd,#a521c1,#364ed7,#9740b9);
+  background: linear-gradient(#9740b9,#4f23bd,#a521c1,#364ed7,#9740b9);
   background-size: auto auto, 6000px 6000px;
   background-repeat: no-repeat, repeat;
   background-position: bottom right, top center;
@@ -78,6 +78,7 @@ li.relationships a {
   background: transparent;
 }
 
+.toggled,
 .listbox,
 fieldset,
 fieldset dl dl,
@@ -163,7 +164,7 @@ button,
 input[type="submit"],
 input {
   background: silver;
-  box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
+  box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #000,inset -2px -2px grey,inset 2px 2px #dfdfdf;
 }
 
 .actions a:hover,
@@ -194,7 +195,7 @@ ul.notes,
 .error,
 .comment_error,
 .alert.flash {
-  box-shadow: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;
+  box-shadow: inset -1px -1px #000, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;
   background: silver !important;
   color: black;
 }
@@ -204,15 +205,15 @@ input[type=password],
 input[type=text],
 select {
   padding: 3px 4px;
-  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
-  background-color: #fff;
+  box-shadow: inset -1px -1px #000, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  background-color: #000;
   box-sizing: border-box;
 }
 
 textarea {
   padding: 3px 4px;
-  box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
-  background-color: #fff;
+  box-shadow: inset -1px -1px #000, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+  background-color: #808080;
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
