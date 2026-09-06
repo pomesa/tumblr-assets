@@ -1,16 +1,21 @@
 (() => {
-    const videos = [];
-    // Select all playlist video elements
-    document.querySelectorAll('ytd-playlist-video-renderer').forEach(video => {
-        const url = video.querySelector('a#video-title')?.href;
-        const title = video.querySelector('a#video-title')?.textContent.trim();
-        if (url && title) {
-            const idMatch = url.match(/v=([a-zA-Z0-9_-]{11})/);
-            if (idMatch) {
-                videos.push({ id: idMatch[1], title });
-            }
-        }
-    });
+    const videos = [...document.querySelectorAll("ytd-playlist-video-renderer")]
+        .map(video => {
+            const link = video.querySelector("a#video-title");
+            if (!link) return null;
 
-    console.log(videos.map(v => `{ id: "${v.id}", title: "${v.title}" },`).join("\n"));
+            return {
+                id: new URL(link.href).searchParams.get("v"),
+                title: (link.title || link.textContent).trim()
+            };
+        })
+        .filter(v => v && v.id);
+
+    console.log(
+        videos
+            .map(v => `{ id: "${v.id}", title: "${v.title.replace(/"/g, '\\"')}" },`)
+            .join("\n")
+    );
+
+    return videos;
 })();
