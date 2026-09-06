@@ -1,20 +1,14 @@
 (() => {
-    const videos = [];
-    // Select all playlist video elements
-    document.querySelectorAll('ytd-playlist-video-renderer').forEach(video => {
-        const url = video.querySelector('a#video-title')?.href;
-        const title = video.querySelector('a#video-title')?.textContent.trim();
-        if (url && title) {
-            const idMatch = url.match(/v=([a-zA-Z0-9_-]{11})/);
-            if (idMatch) {
-                videos.push({ id: idMatch[1], title });
-            }
-        }
-    });
+    return [...document.querySelectorAll("ytd-playlist-video-renderer")]
+        .map(video => {
+            const link = video.querySelector("a#video-title");
+            if (!link) return null;
 
-    const html = videos.map(v => 
-        `<li><span class="play-audio-btn click-image" data-video-id="${v.id}" data-title="${v.title}">`
-    ).join("\n");
-
-    console.log(html);
+            return {
+                title: link.textContent.trim(),
+                url: link.href,
+                id: new URL(link.href).searchParams.get("v")
+            };
+        })
+        .filter(Boolean);
 })();
