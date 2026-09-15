@@ -1,1 +1,2 @@
 dir "%USERPROFILE%\Downloads" /b > "%USERPROFILE%\Downloads\downloads.txt"
+dir "D:\Videos" /b /s /a-d > "%USERPROFILE%\Downloads\downloads.txt"
