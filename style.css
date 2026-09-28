@@ -32,7 +32,7 @@ body {
   background-image: url("pomesa.neocities.org/assets/img/backgrounds/pastel.png");
   background-color: var(--primary-color);
   color: var(--primary-color);
-  font-family: 'pixelthin'; 
+  font-family: "pixelthin", sans-serif; 
   font-size: 18px;
 }
 
