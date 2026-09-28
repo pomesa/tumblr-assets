@@ -32,7 +32,7 @@ body {
   background-image: url("pomesa.neocities.org/assets/img/backgrounds/pastel.png");
   background-color: var(--primary-color);
   color: var(--primary-color);
-  font-family: "pixelthin", sans-serif; 
+  font-family: 'pixelthin';
   font-size: 18px;
 }
 
@@ -65,7 +65,6 @@ nav a:visited {
 }
 
 nav a:first-of-type {
-  font-family: "JetBrains Mono Variable", monospace;
   font-weight: 500;
   text-transform: none;
 }
@@ -95,7 +94,6 @@ a:visited {
 
 h2 {
   margin-bottom: calc(0.25rem * 4);
-  font-family: "JetBrains Mono Variable", monospace;
   font-size: 1.25rem;
   font-weight: 500;
   line-height: calc(1.75 / 1.25);
@@ -131,7 +129,6 @@ dl {
 dt {
   margin-bottom: calc(0.25rem * 2);
   color: var(--ctp-latte-subtext0);
-  font-family: "JetBrains Mono Variable", monospace;
   font-size: 0.875rem;
   font-weight: 500;
   line-height: calc(1.25 / 0.875);
@@ -172,7 +169,6 @@ dd:not(:nth-last-child(1)) {
   padding: calc(0.25rem * 4);
   background-color: var(--ctp-latte-base);
   color: var(--ctp-latte-yellow);
-  font-family: "JetBrains Mono Variable", monospace;
   font-weight: 500;
 }
 
