@@ -1,0 +1,244 @@
+@import url('https://fonts.cdnfonts.com/css/white-on-black');
+/* ========================= 
+   Variables
+========================= */ 
+:root{/*Pastel Goth*/
+  --text-color: #d3d3d3;/*Never changes*/
+  --primary-color: #483fb1;
+  --accent-color: #ff2fff;
+  --overlay-color: rgba(101, 84, 138, 0.8);
+  --background-image: url("https://i.imgur.com/5KOvzzJ.gif");
+  --background-image-still: url("/assets/img/backgrounds/pastel.png");
+  --current-background: var(--background-image);
+  --cursor-image: url(https://pomesa.neocities.org/assets/img/cursor.png);
+  --click-image: url(https://64.media.tumblr.com/179de0f393cc90fb96e05f29236fcc82/1ca01790d8fffe0a-66/s640x960/d3ebd289efd3319db326a0c982a3c05a442e7c48.gif),auto;
+  --header-graphic: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cf2836cb-5893-4a6c-b156-5a89d94fc721/db47g1s-95961fde-f942-438a-bdae-7171b5e8d9e9.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9jZjI4MzZjYi01ODkzLTRhNmMtYjE1Ni01YTg5ZDk0ZmM3MjEvZGI0N2cxcy05NTk2MWZkZS1mOTQyLTQzOGEtYmRhZS03MTcxYjVlOGQ5ZTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3bgRz4wDId0g4v4zGCpts7yFlZRlm_TpvP6XotJgVA8");
+  --banner-graphic: url("https://64.media.tumblr.com/cbe5fd85351a556831b3c00b2c677222/3335549b2a9c905a-08/s2048x3072/5dd57baa046bc9cb200d882433609c51b8b65eb4.pnj");
+  }
+@font-face {
+  font-family: 'pixelthin';
+  src: url('/assets/thin_pixel-7.ttf') format('truetype'); 
+}
+
+
+
+* {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+body {
+  background-image: url("pomesa.neocities.org/assets/img/backgrounds/pastel.png");
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+  font-family: 'pixelthin'; 
+  font-size: 18px;
+}
+
+.cols {
+  grid-gap: 0;
+  gap: calc(0.25rem * 4);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: calc(0.25rem * 4);
+  border-bottom: 1px solid var(--accent-color);
+  font-size: 0;
+}
+
+nav a {
+  margin-bottom: -1px;
+  margin-right: calc(0.25rem * 4);
+  border-bottom: 1px solid transparent;
+  padding: calc(0.25rem * 2);
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+nav a:visited {
+  color: var(--ctp-latte-text);
+}
+
+nav a:first-of-type {
+  font-family: "JetBrains Mono Variable", monospace;
+  font-weight: 500;
+  text-transform: none;
+}
+
+nav a:nth-child(4) {
+  text-transform: none;
+}
+
+nav a:hover {
+  border-bottom: 1px solid var(--ctp-latte-text);
+  text-decoration: none;
+}
+
+a {
+  color: var(--ctp-latte-green);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--ctp-latte-green);
+}
+
+h2 {
+  margin-bottom: calc(0.25rem * 4);
+  font-family: "JetBrains Mono Variable", monospace;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: calc(1.75 / 1.25);
+}
+
+section:first-of-type {
+  display: flex;
+  flex-direction: column;
+}
+
+section:first-of-type p {
+  align-self: center;
+  margin-bottom: calc(0.25rem * 4);
+}
+
+.profile-picture {
+  align-self: center;
+  margin-bottom: calc(0.25rem * 4);
+  border-radius: calc(infinity * 1px);
+  width: calc(0.25rem * 48);
+  height: calc(0.25rem * 48);
+  max-width: none;
+  background-color: var(--ctp-latte-mantle);
+}
+
+dl {
+  border: 1px solid var(--ctp-latte-surface0);
+  border-radius: 0.5rem;
+  padding: calc(0.25rem * 4);
+  background-color: var(--ctp-latte-mantle);
+}
+
+dt {
+  margin-bottom: calc(0.25rem * 2);
+  color: var(--ctp-latte-subtext0);
+  font-family: "JetBrains Mono Variable", monospace;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: calc(1.25 / 0.875);
+  text-transform: uppercase;
+}
+
+dd {
+  margin-bottom: 0px;
+}
+
+dd:not(:nth-last-child(1)) {
+  margin-bottom: calc(0.25rem * 4);
+  border-bottom: 1px solid var(--ctp-latte-surface0);
+  padding-bottom: calc(0.25rem * 4);
+}
+
+.status {
+  margin-bottom: calc(0.25rem * 4);
+  border: 1px solid var(--ctp-latte-surface0);
+  border-radius: 0.5rem;
+  padding: calc(0.25rem * 4);
+  background-color: var(--ctp-latte-mantle);
+}
+
+.status-username {
+  display: flex;
+  justify-content: center;
+}
+
+.status-username a {
+  display: none;
+}
+
+.status-content {
+  margin: 0;
+  border: 1px solid var(--ctp-latte-surface0);
+  border-radius: 0.375rem;
+  padding: calc(0.25rem * 4);
+  background-color: var(--ctp-latte-base);
+  color: var(--ctp-latte-yellow);
+  font-family: "JetBrains Mono Variable", monospace;
+  font-weight: 500;
+}
+
+.status-content::before {
+  content: '"';
+}
+
+.status-content::after {
+  content: '"';
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--ctp-mocha-base);
+    color: var(--ctp-mocha-text);
+  }
+
+  nav {
+    border-bottom: 1px solid var(--ctp-mocha-surface0);
+  }
+
+  nav a {
+    color: var(--ctp-mocha-text);
+  }
+
+  nav a:visited {
+    color: var(--ctp-mocha-text);
+  }
+
+  nav a:hover {
+    border-bottom: 1px solid var(--ctp-mocha-text);
+  }
+
+  a {
+    color: var(--ctp-mocha-green);
+  }
+
+  a:visited {
+    color: var(--ctp-mocha-green);
+  }
+
+  .profile-picture {
+    background-color: var(--ctp-mocha-mantle);
+  }
+
+  dl {
+    border: 1px solid var(--ctp-mocha-surface0);
+    background-color: var(--ctp-mocha-mantle);
+  }
+
+  dt {
+    color: var(--ctp-mocha-subtext0);
+  }
+
+  dd:not(:nth-last-child(1)) {
+    border-bottom: 1px solid var(--ctp-mocha-surface0);
+  }
+
+  .status {
+    border: 1px solid var(--ctp-mocha-surface0);
+    background-color: var(--ctp-mocha-mantle);
+  }
+
+  .status-content {
+    border: 1px solid var(--ctp-mocha-surface0);
+    background-color: var(--ctp-mocha-base);
+    color: var(--ctp-mocha-yellow);
+  }
+}
