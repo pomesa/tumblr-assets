@@ -1,4 +1,3 @@
-@import url('https://fonts.cdnfonts.com/css/white-on-black');
 /* ========================= 
    Variables
 ========================= */ 
@@ -8,16 +7,17 @@
   --accent-color: #ff2fff;
   --overlay-color: rgba(101, 84, 138, 0.8);
   --background-image: url("https://i.imgur.com/5KOvzzJ.gif");
-  --background-image-still: url("/assets/img/backgrounds/pastel.png");
+  --background-image-still: url("https://pomesa.neocities.org/assets/img/backgrounds/pastel.png");
   --current-background: var(--background-image);
   --cursor-image: url(https://pomesa.neocities.org/assets/img/cursor.png);
   --click-image: url(https://64.media.tumblr.com/179de0f393cc90fb96e05f29236fcc82/1ca01790d8fffe0a-66/s640x960/d3ebd289efd3319db326a0c982a3c05a442e7c48.gif),auto;
   --header-graphic: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cf2836cb-5893-4a6c-b156-5a89d94fc721/db47g1s-95961fde-f942-438a-bdae-7171b5e8d9e9.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9jZjI4MzZjYi01ODkzLTRhNmMtYjE1Ni01YTg5ZDk0ZmM3MjEvZGI0N2cxcy05NTk2MWZkZS1mOTQyLTQzOGEtYmRhZS03MTcxYjVlOGQ5ZTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3bgRz4wDId0g4v4zGCpts7yFlZRlm_TpvP6XotJgVA8");
   --banner-graphic: url("https://64.media.tumblr.com/cbe5fd85351a556831b3c00b2c677222/3335549b2a9c905a-08/s2048x3072/5dd57baa046bc9cb200d882433609c51b8b65eb4.pnj");
   }
+   
 @font-face {
   font-family: 'pixelthin';
-  src: url('/assets/thin_pixel-7.ttf') format('truetype'); 
+  src: url('https://pomesa.neocities.org/assets/thin_pixel-7.ttf') format('truetype'); 
 }
 
 
@@ -29,7 +29,7 @@
 }
 
 body {
-  background-image: url("pomesa.neocities.org/assets/img/backgrounds/pastel.png");
+  background-image: url("https://pomesa.neocities.org/assets/img/backgrounds/pastel.png");
   background-color: var(--primary-color);
   color: var(--primary-color);
   font-family: 'pixelthin';
