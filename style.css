@@ -54,7 +54,7 @@ nav a {
   margin-right: calc(0.25rem * 4);
   border-bottom: 1px solid transparent;
   padding: calc(0.25rem * 2);
-  color: var(--primary-color);
+  color: var(--accent-color);
   font-size: 1rem;
   font-weight: 600;
   text-transform: capitalize;
