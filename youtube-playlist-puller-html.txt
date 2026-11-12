@@ -1,14 +1,16 @@
-(() => {
-    return [...document.querySelectorAll("ytd-playlist-video-renderer")]
-        .map(video => {
-            const link = video.querySelector("a#video-title");
-            if (!link) return null;
+copy(JSON.stringify(
+  [...document.querySelectorAll("yt-lockup-view-model")]
+    .map(el => {
+      const link = el.querySelector("a.ytLockupMetadataViewModelTitle");
+      if (!link) return null;
 
-            return {
-                title: link.textContent.trim(),
-                url: link.href,
-                id: new URL(link.href).searchParams.get("v")
-            };
-        })
-        .filter(Boolean);
-})();
+      return {
+        title: link.textContent.trim(),
+        url: link.href,
+        id: new URL(link.href).searchParams.get("v")
+      };
+    })
+    .filter(x => x?.id),
+  null,
+  2
+));
