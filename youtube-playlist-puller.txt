@@ -1,11 +1,17 @@
+
 (() => {
-    const videos = [...document.querySelectorAll("ytd-playlist-video-renderer")]
+    const videos = [...document.querySelectorAll("yt-lockup-view-model")]
         .map(video => {
-            const link = video.querySelector("a#video-title");
+            const link = video.querySelector(
+                "a.ytLockupMetadataViewModelTitle, h3 a"
+            );
+
             if (!link) return null;
 
+            const url = new URL(link.href, location.origin);
+
             return {
-                id: new URL(link.href).searchParams.get("v"),
+                id: url.searchParams.get("v"),
                 title: (link.title || link.textContent).trim()
             };
         })
@@ -13,7 +19,7 @@
 
     console.log(
         videos
-            .map(v => `{ id: "${v.id}", title: "${v.title.replace(/"/g, '\\"')}" },`)
+            .map(v => `{ id: "${v.id}", title: "${v.title.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}" },`)
             .join("\n")
     );
 
